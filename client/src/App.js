@@ -16,7 +16,7 @@ function App() {
       const res = await fetch("/getRestaurantList");
       if (res.status === 500) throw Error("Please Try again Later");
       const data = await res.json();
-      setRestaurants(data);
+      setRestaurants(data.list);
     } catch (err) {
       console.log(err);
       alert(err);
