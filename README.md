@@ -14,7 +14,7 @@
 Create a .env file in then root and add the following
 
 ```
-mongoURI = your mongodb uri
+mongoURI = your mongodb uri (from MongoDB Atlas)
 ```
 
 ### Install Dependencies (frontend & backend)
