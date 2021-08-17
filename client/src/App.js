@@ -46,7 +46,7 @@ function App() {
         </Card.Group>
       ) : (
         <div className="btn-wrapper">
-          <Button secondary onClick={getRestaurantList}>
+          <Button secondary disabled={loading} onClick={getRestaurantList}>
             {loading ? "Loading Restaurants" : "Load Restaurants"}
           </Button>
         </div>
