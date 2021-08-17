@@ -40,10 +40,17 @@ npm run server
 Build with:
 
 express.js a node.js framework
+definng an app and the express.json middleware to parse json.
+getting the mongoURI from .end that it will be secure
+connecting to the mongoDB atlas with mongoose
+creating a Restaurant Schema to be clear with the data that it gets
+a single route to get the restaurants list
 mongoose which is elegant mongodb object modeling for node.js
 the servers connets to MongoDB Atlas, a cloud Database
+setting the app port to loocalhost:5000 and then listening to it
+if the env.NODE_ENV is production the server serves the static of the build dir of the client(React APP)
 
-### Backend
+### Fronted
 
 Build with:
 
