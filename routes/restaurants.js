@@ -7,13 +7,10 @@ router.get("/", async (req, res) => {
     const restaurants = await Restaurant.find().select(
       "name description address id"
     );
-
-    console.log(1);
-
     res.json(restaurants);
-  } catch (error) {
-    console.error(error);
-    res.json(error);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: "Server error, please try again" });
   }
 });
 

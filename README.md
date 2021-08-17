@@ -51,9 +51,10 @@ React.js using react-hooks and functional components
 Material UI a React UI frameword
 
 When the app runs you will find a a navbar at the top and a button "Load Restaurants" in the middle of the page,
-when user clicks the button, the app fetches the restaurants list from the server and the button changes his labbel to "Loading Restaurants", by the end of the loading of the list, it will show each restaurant's name, address and description.
+when user clicks the button, the app fetches the restaurants list from the server and the button changes his label to "Loading Restaurants", than the lo by the end of the loading of the list, it will show each restaurant's name, address and description.
 The user can search and filter the restaurants by name, at right side of the navbar.
 For handling loading state the i'm using react-hook useState, for the filter ands search i also use useState the each changing of the search input will change the query's state, then the app will conditianally will show the restaurants if the query chars match any chars of the restaurant name, by the javascript string method includes().
+When the users click a restaurant card, the click event triggers a useState hook, setSelectedRestaurant and the setting the clicked restaurant as the selectedRestaurant, then the restaurant's card get a classname of "green", and its background changes to green, another click on the same card will undo it and will set the selectedRestaurant to null.
 
 ### Restaurant List Route
 

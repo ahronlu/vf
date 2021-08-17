@@ -14,12 +14,14 @@ function App() {
     setLoading(true);
     try {
       const res = await fetch("/getRestaurantList");
+      if (res.status === 400) throw Error("Please Try again Later");
       const data = await res.json();
       setRestaurants(data);
-      setLoading(false);
     } catch (err) {
-      console.error(err);
+      console.log(err);
+      alert(err);
     }
+    setLoading(false);
   };
 
   return (
