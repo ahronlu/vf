@@ -1,13 +1,20 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
 // Load env vars
 dotenv.config();
 
 const app = express();
 
+// Connect Database
+connectDB();
+
 // Body parser
 app.use(express.json());
+
+// Define Routes
+app.use("/restaurants", require("./routes/restaurants"));
 
 const PORT = process.env.PORT || 5000;
 
