@@ -24,11 +24,11 @@ function App() {
 
   return (
     <>
-      <Nav setQuery={setQuery} />
+      <Nav setQuery={setQuery} showSearch={restaurants.length} />
       {restaurants.length ? (
         <Card.Group as={Container} itemsPerRow={4} stackable={true}>
           {restaurants.map((restaurant) => {
-            if (restaurant.name.toLowerCase().includes(query))
+            if (restaurant.name.toLowerCase().includes(query)) {
               return (
                 <Restaurant
                   selected={selectedRestaurant === restaurant.id}
@@ -37,6 +37,9 @@ function App() {
                   restaurant={restaurant}
                 />
               );
+            } else {
+              return null;
+            }
           })}
         </Card.Group>
       ) : (

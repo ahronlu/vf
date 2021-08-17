@@ -18,3 +18,9 @@ body {
 .green {
   background: #77ad42 !important;
 }
+
+@media (max-width: 767px) {
+  body .ui.stackable.cards .card:first-child {
+    margin-top: 2em !important;
+  }
+}
