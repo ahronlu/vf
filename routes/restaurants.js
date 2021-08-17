@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
     res.json(restaurants);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ msg: "Server error, please try again" });
+    return res.status(500).json({ msg: "Server error, please try again" });
   }
 });
 
