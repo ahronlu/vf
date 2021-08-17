@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
-app.use("/restaurants", require("./routes/restaurants"));
+app.use("/getRestaurantList", require("./routes/restaurants"));
 
 const PORT = process.env.PORT || 5000;
 
