@@ -8,15 +8,7 @@ router.get("/", async (req, res) => {
       "name description address id"
     );
 
-    res.status(500).json({ msg: "Server error, please try again" });
-    return;
-
-    if (restaurants) {
-      res.json(restaurants);
-    } else {
-      res.status(404);
-      throw new Error("Restaurants not found");
-    }
+    res.json(restaurants);
   } catch (err) {
     console.error(err);
     res.status(500).json({ msg: "Server error, please try again" });
