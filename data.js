@@ -1,7 +1,7 @@
 const restaurants = [
   {
     id: 24,
-    restaurant_name: "Go Falafel",
+    name: "Go Falafel",
     chain: null,
     description:
       "Go Falafel incorporates a concept of quality and freshness into its menu; Fresh falafel, juice and salads to meet the demand of healthy fast food.",
@@ -14,7 +14,7 @@ const restaurants = [
   },
   {
     id: 28,
-    restaurant_name: "Jam Delish",
+    name: "Jam Delish",
     chain: null,
     description:
       "Vegan Caribbean cuisine serving a vegan twist to traditional Caribbean dishes",
@@ -27,7 +27,7 @@ const restaurants = [
   },
   {
     id: 33,
-    restaurant_name: "The Gnarbecue",
+    name: "The Gnarbecue",
     chain: null,
     description:
       "100% Vegan fast food with unique homemade Seitan steaks and patties. Big burgers, sarnies, corndogs and loaded fries.",
@@ -40,7 +40,7 @@ const restaurants = [
   },
   {
     id: 35,
-    restaurant_name: "Cafe Van Gogh",
+    name: "Cafe Van Gogh",
     chain: null,
     description:
       "Warm, brick-clad & not-for-profit cafe serving hearty vegan cuisine in a relaxed environment",
@@ -53,7 +53,7 @@ const restaurants = [
   },
   {
     id: 47,
-    restaurant_name: "Flower Burger",
+    name: "Flower Burger",
     chain: null,
     description: "The original rainbow vegan burger.",
     phone_number: "390299257187",
@@ -65,7 +65,7 @@ const restaurants = [
   },
   {
     id: 50,
-    restaurant_name: "OSU Coconuts",
+    name: "OSU Coconuts",
     chain: null,
     description:
       '"The best pancakes in the world." Vegan coconut pancakes and Caribbean roti wraps.',
@@ -78,7 +78,7 @@ const restaurants = [
   },
   {
     id: 68,
-    restaurant_name: "Marees Sauces And Food",
+    name: "Marees Sauces And Food",
     chain: null,
     description:
       "Diverse menu providing organic vegan food with Afro-Caribbean flavors.",
@@ -91,7 +91,7 @@ const restaurants = [
   },
   {
     id: 86,
-    restaurant_name: "Holy Carrot",
+    name: "Holy Carrot",
     chain: null,
     description:
       "Globally inspired plant based dishes that taste good and feel good.",

@@ -28,7 +28,7 @@ function App() {
       {restaurants.length ? (
         <Card.Group as={Container} itemsPerRow={4} stackable={true}>
           {restaurants.map((restaurant) => {
-            if (restaurant.restaurant_name.toLowerCase().indexOf(query) > -1)
+            if (restaurant.name.toLowerCase().includes(query))
               return (
                 <Restaurant
                   selected={selectedRestaurant === restaurant.id}

@@ -5,7 +5,7 @@ const Restaurant = require("../models/restaurant");
 router.get("/", async (req, res) => {
   try {
     const restaurants = await Restaurant.find().select(
-      "restaurant_name description address id"
+      "name description address id"
     );
 
     console.log(1);

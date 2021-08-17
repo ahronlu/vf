@@ -8,7 +8,7 @@ const Restaurant = ({ restaurant, setSelectedRestaurant, selected }) => {
       className={selected ? "green" : ""}
     >
       <Card.Content>
-        <Card.Header content={restaurant.restaurant_name} />
+        <Card.Header content={restaurant.name} />
         <Card.Meta content={restaurant.address} />
         <Card.Description content={restaurant.description} />
       </Card.Content>
