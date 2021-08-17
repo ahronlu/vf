@@ -2,8 +2,6 @@
 
 > Vegan Restaurant Finder built with the MERN stack.
 
-![screenshot](https://github.com/ahronlu/vf/screenshop.png)
-
 ## Features
 
 - List all vegan restaurants
