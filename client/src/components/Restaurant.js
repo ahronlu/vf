@@ -4,7 +4,11 @@ import { Card } from "semantic-ui-react";
 const Restaurant = ({ restaurant, setSelectedRestaurant, selected }) => {
   return (
     <Card
-      onClick={() => setSelectedRestaurant(restaurant.id)}
+      onClick={() =>
+        selected
+          ? setSelectedRestaurant(null)
+          : setSelectedRestaurant(restaurant.id)
+      }
       className={selected ? "green" : ""}
     >
       <Card.Content>
